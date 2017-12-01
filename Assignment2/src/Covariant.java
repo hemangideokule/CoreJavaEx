@@ -1,31 +1,33 @@
 class A {}
 class B extends A {}
  
-class Base
+class C
 {
-    A fun()
+    A disp()
     {
-        System.out.println("Base fun()");
+        System.out.println("display() from class c");
         return new A();
     }
 }
  
-class Derived extends Base
+class D extends C
 {
-    B fun()
+    B disp()
     {
-        System.out.println("Derived fun()");
+        System.out.println("display() from class d");
         return new B();
+       
     }
 }
 public class Covariant {
 
 	public static void main(String[] args) {
-		Base base = new Base();
-	       base.fun();
+		C c = new C();
+	       c.disp();
+	      
 	 
-	       Derived derived = new Derived();
-	       derived.fun();
+	       D d = new D();
+	       d.disp();
 	}
 
 }

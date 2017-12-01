@@ -4,8 +4,9 @@ public class ArraySort {
 
 	public static void main(String[] args) {
 		int n,a,b;
-		String str;
+		//String str=null;
 		Scanner sc= new Scanner(System.in);
+		
 		System.out.println("Enter size");
 		n=sc.nextInt();
 		int array1 []= new int [n];
@@ -23,14 +24,19 @@ public class ArraySort {
 		Arrays.sort(array1);
 	    System.out.println("Sorted numeric array : "+Arrays.toString(array1));
 		System.out.println();
-		System.out.println("Enter string");
-		str=sc.next();
-		System.out.println("String array : "+str);
-		System.out.println();
 		
-		
-	    //Arrays.sort((int)str);
-	    //System.out.println("Sorted string array : "+Arrays.toString(str));
+		int str;
+		System.out.println("Enter size of string array : ");
+		str=sc.nextInt();
+		String[] array2 = new String[str] ;
+		System.out.println("Enter strings:");
+		for (int i =0 ; i < str;i++){
+
+            array2[i] = sc.next();
+        }
+		 
+		Arrays.sort(array2);
+	    System.out.println("Sorted string array : "+Arrays.toString(array2));
 	    
 	}
 

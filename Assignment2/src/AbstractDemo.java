@@ -1,8 +1,8 @@
 abstract class AbstractEx
 	{
 	int a=30,b=1;
-	abstract public void disp();
-	public static void abc()
+	//abstract public void disp();
+	public  void abc()
 	{
 		System.out.println("hellloo");
 	}
@@ -17,12 +17,12 @@ abstract class AbstractEx
 
 class AbstractEx1 extends AbstractEx
 	{
-		@Override
+		/*@Override
 		public void disp()
 		{
 			System.out.println("Addition="+(a+b));
 			
-	}
+	}*/
 	}
 public class AbstractDemo {
 
@@ -30,7 +30,7 @@ public class AbstractDemo {
 		// TODO Auto-generated method stub
 		
 		AbstractEx1 ab=new AbstractEx1();
-		ab.disp();
+		//ab.disp();
 		ab.abc();
 		//ab= new AbstractEx();
 	
